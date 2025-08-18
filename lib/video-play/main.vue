@@ -502,10 +502,10 @@ const mutedHandler = () => {
 const progressBarChange = (ev: Event, val) => {
   let duration = state.dVideo.duration || state.dVideo.target.duration; // 媒体总长
   state.dVideo.currentTime = duration * val;
-  if (state.playBtnState == "play") {
+  /*if (state.playBtnState == "play") {
     state.dVideo.play();
     state.playBtnState = "pause";
-  }
+  }*/
 };
 // 进度条移动
 const onProgressMove = (ev, val) => {
@@ -632,4 +632,5 @@ defineExpose({
   height: v-bind(height);
 }
 @import "../style/vPlayer.less";
+
 </style>
