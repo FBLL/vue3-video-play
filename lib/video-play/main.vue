@@ -229,7 +229,7 @@
             @click="requestPictureInPictureHandle"
           >
             <d-icon size="20" icon="icon-pip"></d-icon>
-            <div class="d-tool-item-main">画中画</div>
+            <!-- <div class="d-tool-item-main">画中画</div> -->
           </div>
           <!-- 网页全屏 -->
           <div
@@ -238,7 +238,7 @@
             @click="state.webFullScreen = !state.webFullScreen"
           >
             <d-icon size="20" icon="icon-web-screen"></d-icon>
-            <div class="d-tool-item-main">网页全屏</div>
+            <!-- <div class="d-tool-item-main">网页全屏</div> -->
           </div>
           <!-- 全屏 -->
           <div
@@ -246,7 +246,7 @@
             v-if="props.controlBtns.includes('fullScreen')"
             @click="toggleFullScreenHandle"
           >
-            <div class="d-tool-item-main">全屏</div>
+            <!-- <div class="d-tool-item-main">全屏</div> -->
             <d-icon size="20" icon="icon-screen"></d-icon>
           </div>
         </div>

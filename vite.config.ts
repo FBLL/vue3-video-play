@@ -24,11 +24,6 @@ export default defineConfig({
     },
   },
   build: {
-    terserOptions: {
-      compress: {
-        drop_debugger: true,
-      },
-    },
     lib: {
       entry: "./lib/index.js",
       name: "index",
@@ -42,6 +37,7 @@ export default defineConfig({
         globals: {
           vue: "Vue",
         },
+        exports: 'named', // 👈 关键一行
       },
     },
     // hmr: { overlay: false }
